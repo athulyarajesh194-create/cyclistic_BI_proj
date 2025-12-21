@@ -59,7 +59,7 @@ The datasets will include customer (user) data, which Jamal will need to approve
 
 * Keep in mind users might use Cyclistic less when the weather is inclement. This should be visible in the dashboard.
 
-### he deliverables and metrics:
+### The deliverables and metrics:
 
 * A table or map visualization exploring starting and ending station locations, aggregated by location. I can use any location identifier, such as station, zip code, neighborhood, and/or borough. This should show the number of trips at starting locations.
 * A visualization showing which destination (ending) locations are popular based on the total trip minutes.
