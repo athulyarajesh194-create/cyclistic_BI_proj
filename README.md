@@ -13,7 +13,7 @@ Cyclistic has captured data points for every trip taken by their customers, incl
 
 The dataset includes millions of rides, so the team wants a dashboard that summarizes key insights. Business plans that are driven by customer insights are more successful than plans driven by just internal staff observations. The executive summary must include key data points that are summarized and aggregated in order for the leadership team to get a clear vision of how customers are using Cyclistic.
 
-**Stakeholders:** 
+### Stakeholders: 
 
 * Sara Romero, VP, Marketing
 
@@ -23,7 +23,7 @@ The dataset includes millions of rides, so the team wants a dashboard that summa
 
 * Nina Locklear, Director, Procurement
 
-**Team members:** 
+### Team members: 
 
 * Adhira Patel, API Strategist
 
@@ -39,15 +39,15 @@ The dataset includes millions of rides, so the team wants a dashboard that summa
 
 *Primary contacts are Adhira, Megan, Rick, and Tessa. 
 
-Per Sara: Dashboard needs to be accessible, with large print and text-to-speech alternatives.
+**Per Sara:** Dashboard needs to be accessible, with large print and text-to-speech alternatives.
 
-Project approvals and dependencies:
+### Project approvals and dependencies:
 
 The datasets will include customer (user) data, which Jamal will need to approve. Also the project might need approval by the teams that own specific product data, including bike trip duration and bike identification numbers. So I need to make sure that stakeholders have data access to all datasets.
 
 **Project goal:** Grow Cyclistic’s Customer Base
 
-Details from Ms. Romero:
+**Details from Ms. Romero:**
 
 * Understand what customers want, what makes a successful product, and how new stations might alleviate demand in different geographical areas.
 
@@ -59,7 +59,7 @@ Details from Ms. Romero:
 
 * Keep in mind users might use Cyclistic less when the weather is inclement. This should be visible in the dashboard.
 
-**The deliverables and metrics:**
+### he deliverables and metrics:
 
 * A table or map visualization exploring starting and ending station locations, aggregated by location. I can use any location identifier, such as station, zip code, neighborhood, and/or borough. This should show the number of trips at starting locations.
 * A visualization showing which destination (ending) locations are popular based on the total trip minutes.
@@ -80,11 +80,11 @@ Details from Ms. Romero:
 
 *Dashboard must be created in 6 weeks!
 
-**Measure success:**
+### Measure success:
 
 I need to analyze data that spans at least one year to see how seasonality affects usage. Exploring data that spans multiple months will capture peaks and valleys in usage. I need to evaluate each trip on the number of rides per starting location and per day/month/year to understand trends. Some example include: do customers use Cyclistic less when it rains? Or does bike-share demand stay consistent? Does this vary by location and user types (subscribers vs. nonsubscribers)? Use these outcomes to find out more about what impacts customer demand.
 
-**Other considerations:**
+### Other considerations:
 
 * The dataset includes latitude and longitude of stations but does not identify more geographic aggregation details, such as zip code, neighborhood name, or borough. The team will provide a separate database with this data. 
 
@@ -98,7 +98,7 @@ I need to analyze data that spans at least one year to see how seasonality affec
 
 Adhira, Brianne, Ernest, Jamal, Megan, Nina, Rick, Shareefah, Sara, Tessa
 
-**Roll-out plan:**
+### Roll-out plan:
 
 **Week 1:** Dataset assigned. Initial design for fields and BikeIDs validated to fit the requirements.
 
