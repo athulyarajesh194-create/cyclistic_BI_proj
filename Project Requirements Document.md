@@ -1,25 +1,33 @@
 # Project Requirements Document: Cyclistic
 
-## BI Analyst:
+**BI Analyst:** Athulya Rajesh
 
-## Client/Sponsor:
+**Client/Sponsor:** 
 
-## Purpose:
+**Purpose:**
 
-## Key Dependencies:
+**Key Dependencies:**
 
-## Stakeholder Requirements:
+**Stakeholder Requirements:**
 
-## Success Criteria:
+**Success Criteria:**
 
-## User Journey:
+**User Journey:**
 
-## Assumptions:
+**Assumptions:**
 
-## Compliance and Privacy:
+**Compliance and Privacy:**
 
-## Accessibility:
+**Accessibility:**
 
-## Roll-out Plan:
+**Roll-out Plan:**
+
+* Week 1: Dataset assigned. Initial design for fields and BikeIDs validated to fit the requirements.
+
+* Weeks 2–3: SQL and ETL development
+
+* Weeks 3–4: Finalize SQL. Dashboard design. 1st draft review with peers.
+
+* Weeks 5–6: Dashboard development and testing
 
 
