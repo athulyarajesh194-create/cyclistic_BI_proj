@@ -6,10 +6,13 @@
 |------|------------------|------|
 
 **Proposer:** 
+
 **Status:** [Draft] > Under review > Implemented | Not implemented (Highlight current status)
 
 **Primary dataset:**
+
 **Secondary dataset:**
+
 **User Profiles:** [Who is the intended audience for this dashboard? How do you expect them to
 use this dashboard?]
 
