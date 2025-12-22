@@ -11,10 +11,29 @@
 
 **Primary dataset:** [NYC Citi Bike Trips](https://console.cloud.google.com/marketplace/details/city-of-new-york/nyc-citi-bike?project=grounded-atrium-447317-f7) 
 
-**Secondary dataset:** ;[Census Bureau US Boundaries](https://console.cloud.google.com/marketplace/product/united-states-census-bureau/us-geographic-boundaries?project=grounded-atrium-447317-f7)
+**Secondary dataset:** [Census Bureau US Boundaries](https://console.cloud.google.com/marketplace/product/united-states-census-bureau/us-geographic-boundaries?project=grounded-atrium-447317-f7)
 
-**User Profiles:** [Who is the intended audience for this dashboard? How do you expect them to
-use this dashboard?]
+**User Profiles:** 
+
+* Sara Romero, VP, Marketing
+
+* Ernest Cox, VP,  Product Development
+
+* Jamal Harris, Director, Customer Data
+
+* Nina Locklear, Director, Procurement
+
+* Adhira Patel, API Strategist
+
+* Megan Pirato, Data Warehousing Specialist
+
+* Rick Andersson, Manager, Data Governance 
+
+* Tessa Blackwell, Data Analyst
+
+* Brianne Sand, Director, IT
+
+* Shareefah Hakimi, Project Manager
 
 ## Dashboard Functionality
 
