@@ -3,6 +3,7 @@
 **Sign-off matrix:**
 
 | Name | Team / Role Date | Date |
+|------|------------------|------|
 
 Proposer: [Name and title]
 Status: [Draft] > Under review > Implemented | Not implemented (Highlight current status)
