@@ -13,7 +13,7 @@
 * Jamal Harris, Director, Customer Data
 * Nina Locklear, Director, Procurement
 
-**Stakeholder Usage Details:** For the company to ensure customer base growth through new station location development, the team wants to know how the customers use this bike-sharing service and what they want from this service and how it differes from subscribers and non-subscribers of this servic. They will use this BI tool to gain valuable insights on what customers want, what makes a successful product, and how new stations might alleviate demand in different geographical areas and weather conditions
+**Stakeholder Usage Details:** For the company to ensure customer base growth through new station location development, the team wants to know how the customers use this bike-sharing service and what they want from this service and how it differs from subscribers and non-subscribers of this service. They will use this BI tool to gain valuable insights on what customers want, what makes a successful product, and how new stations might alleviate demand in different geographical areas and weather conditions
 
 **Primary Requirements:**
 The primary requirements are as follows:
