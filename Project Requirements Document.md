@@ -8,7 +8,9 @@
 
 **Key Dependencies:**
 
-**Stakeholder Requirements:** The main summary of their requirements is to understand the customer demand of their service in different station locations with varioius factors contributing to that demand - eg. weather, time, distance etc. The relevant insights should include  (R - required, D - Desired, N - Nice to Have):
+**Stakeholder Requirements:** The main summary of their requirements is to understand the customer demand of their service in different station locations with varioius factors contributing to that demand - eg. weather, time, distance etc. 
+
+The relevant insights should include (R - required, D - Desired, N - Nice to Have):
 
 * A table or map visualization exploring starting and ending station locations, aggregated by location. I can use any location identifier, such as station, zip code, neighborhood, and/or borough. This should show the number of trips at starting locations. (R)
 
