@@ -5,7 +5,7 @@
 | Name | Team / Role Date | Date |
 |------|------------------|------|
 
-**Proposer:** 
+**Proposer:** Jamal Harris, Director, Customer Data
 
 **Status:** **Draft** > Under review > Implemented | Not implemented 
 
