@@ -40,9 +40,9 @@
 | Dashboard Feature | Your Request |
 |-----------|----------------------|
 | Reference dashboard | The dashboard will start from scratch based on the data given in the datasets. It would display starting and ending locations, aggregated by various location. This should show the number of trips per location |
-| Access |
-| Scope |
-| Date filters and granularity | 
+| Access | No editing power. It will be read only to the required users of the dashboard |
+| Scope | Fieldnames included can be the month, year, station, zip code, weather, neighbourhood/location |
+| Date filters and granularity | Data filters that could work for this dashboard can be the date, moth and year. In terms of granularity, to maintain high-level detail we should have feature of clicking the metric of any chart to get further information/insights |
 
 ## Metrics and Charts
 
