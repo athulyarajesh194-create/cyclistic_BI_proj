@@ -6,7 +6,7 @@
 
 **Purpose:** Cyclistic’s Customer Growth Team is creating a business plan for next year. The team wants to understand how their customers are using their bikes; their top priority is identifying customer demand at different station locations. The dataset includes millions of rides, so the team wants a dashboard that summarizes key insights. Business plans that are driven by customer insights are more successful than plans driven by just internal staff observations. he executive summary must include key data points that are summarized and aggregated in order for the leadership team to get a clear vision of how customers are using Cyclistic.
 
-**Key Dependencies:**
+**Key Dependencies:** This project will require a dataset of customer data, so the Director of Customer Data will need to approve the request. Approval should also be given by the teams that own specific product data including bike trip duration and bike identification numbers to validate that the data is being interpreted correctly. The primary contacts are Adhira Patel, Megan Pirato, Rick Andersson, and Tessa Blackwell.
 
 **Stakeholder Requirements:** The main summary of their requirements is to understand the customer demand of their service in different station locations with varioius factors contributing to that demand - eg. weather, time, distance etc. 
 
