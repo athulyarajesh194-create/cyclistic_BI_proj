@@ -39,7 +39,7 @@
 
 | Dashboard Feature | Your Request |
 |-----------|----------------------|
-| Reference dashboard |
+| Reference dashboard | The dashboard will start from scratch based on the data given in the datasets. It would display starting and ending locations, aggregated by various location. This should show the number of trips per location |
 | Access |
 | Scope |
 | Date filters and granularity | 
