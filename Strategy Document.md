@@ -37,7 +37,7 @@
 
 ## Dashboard Functionality
 
-| Dashboard Feature | Your Request |
+| Dashboard Feature | Request |
 |-----------|----------------------|
 | Reference dashboard | The dashboard will start from scratch based on the data given in the datasets. It would display starting and ending locations, aggregated by various location. This should show the number of trips per location |
 | Access | No editing power. It will be read only to the required users of the dashboard |
@@ -48,30 +48,48 @@
 
 **Chart 1**
 
-| Chart Feature | Your Request |
+| Chart Feature | Request |
 |---------------|--------------|
-| Chart title |
-| Chart type |
-| Dimension(s) |
-| Metric(s) |
+| Chart title | Trip Totals |
+| Chart type | Line |
+| Dimension(s) | Date |
+| Metric(s) | Trip Count |
 
 **Chart 2**
 
-| Chart Feature | Your Request |
+| Chart Feature | Request |
 |---------------|--------------|
-| Chart title |
-| Chart type |
-| Dimension(s) |
-| Metric(s) |
+| Chart title | Trip Counts by Starting Neighborhood |
+| Chart type | Table |
+| Dimension(s) | Neighborhood, Month |
+| Metric(s) | Trip Count |
 
 **Chart 3**
 
-| Chart Feature | Your Request |
+| Chart Feature | Request |
 |---------------|--------------|
-| Chart title |
-| Chart type |
-| Dimension(s) |
-| Metric(s) |
+| Chart title | Total Trip Minutes by Destination |
+| Chart type | Bar |
+| Dimension(s) | Zip code end, borough end, neighborhood end, user type |
+| Metric(s) | Trip Minutes |
+
+ **Chart 4**
+
+| Chart Feature | Request |
+|---------------|--------------|
+| Chart title | Average Time to Arrive |
+| Chart type | Table |
+| Dimension(s) | Zip code end, borough end, neighborhood end, start day, grand total |
+| Metric(s) | Trip Minutes |
+
+**Chart 5**
+
+| Chart Feature | Request |
+|---------------|--------------|
+| Chart title | Seasonal Trends |
+| Chart type | Map |
+| Dimension(s) | Neighborhood start, neighborhood end, number of rides, average trip duration, weather |
+| Metric(s) | Trip minutes, weather, number of rides |
 
 **Dashboard Mockup**
 Go to Dashboard Mockup File
