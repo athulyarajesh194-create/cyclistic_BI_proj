@@ -16,7 +16,7 @@ The relevant insights should include (R - required, D - Desired, N - Nice to Hav
 
 * A visualization showing which destination (ending) locations are popular based on the total trip minutes. (R)
 
-* A visualization that focuses on trends from the summer of 2015. (D)
+* A visualization that focuses on trends from the summer. (D)
 
 * A visualization showing the percent growth in the number of trips year over year. (R)
 
