@@ -96,12 +96,3 @@ I need to analyze data that spans at least one year to see how seasonality affec
 
 Adhira, Brianne, Ernest, Jamal, Megan, Nina, Rick, Shareefah, Sara, Tessa
 
-### Roll-out plan:
-
-**Week 1:** Dataset assigned. Initial design for fields and BikeIDs validated to fit the requirements.
-
-**Weeks 2–3:** SQL and ETL development
-
-**Weeks 3–4:** Finalize SQL. Dashboard design. 1st draft review with peers.
-
-**Weeks 5–6:** Dashboard development and testing
