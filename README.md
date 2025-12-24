@@ -45,7 +45,54 @@ In short, this document ensures that everyone is in agreement on what "success" 
 
 ## Project Requirements Document.md
 
+It is a more detailed version of the Stakeholder Requirements, specifically designed to guide the BI Analyst through the technical execution of the project while ensuring all organizational standards are met.
+
+Here is an explanation of the specific components of this document:
+
+1. Strategic Alignment & Purpose
+Data-Driven Decision Making: It explicitly states that business plans based on customer insights are more successful than those based on internal observations.
+
+Executive Vision: The purpose is to give leadership a "clear vision" of usage through summarized and aggregated data points.
+
+2. Risk & Data Management (Key Dependencies)
+Access Control: It identifies the gatekeepers (Jamal Harris) who must approve data requests.
+
+Validation: It notes that product-specific teams must validate the interpretation of "bike trip duration" and "ID numbers" to prevent analytical errors.
+
+3. Priority Framework (R/D/N)
+Unlike a simple list, this document uses a Priority Ranking:
+
+Required (R): Non-negotiable features like YoY growth and the impact of weather.
+
+Desired (D): High-value but secondary, such as specific Summer trends.
+
+Nice to Have (N): Features like "station congestion" that are added only if time permits.
+
+4. The SMART Success Framework
+This section turns vague goals into concrete technical benchmarks:
+
+Specific: Focuses on what makes a "successful product".
+
+Measurable: Commits to evaluating rides per location/day/month/year.
+
+Action-Oriented: Aims to prove or disprove if factors like weather truly impact demand.
+
+Relevant: Directly supports the question: "How are we going to improve the Cyclistic experience?"
+
+Timely: Mandates at least one year of data to capture seasonal "peaks and valleys".
+
+5. Technical Constraints & Ethics
+Data Cleaning Assumptions: It warns the analyst that they will need to join a separate database to get Zip Codes/Boroughs since the raw data only has Lat/Long.
+
+Environmental Assumptions: It establishes a "rule of thumb" for weather: if it rained at any point in a day, the analyst should treat the whole day as impacted.
+
+Privacy & Compliance: It sets a hard rule on anonymization, forbidding the use of names, emails, or phone numbers to protect rider privacy.
+
+6. The Project Lifecycle (Roll-out Plan)
+It provides a 6-week timeline, moving from data validation (Week 1) to SQL/ETL (Weeks 2-3), and finally to dashboard testing (Weeks 5-6).
+
 ## Stratey Document.md
+
 
 ## Target Table SQL Code - Seasonal Trends.md
 
