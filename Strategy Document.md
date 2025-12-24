@@ -91,5 +91,3 @@
 | Dimension(s) | Neighborhood start, neighborhood end, number of rides, average trip duration, weather |
 | Metric(s) | Trip minutes, weather, number of rides |
 
-**Dashboard Mockup**
-Go to Dashboard Mockup File
