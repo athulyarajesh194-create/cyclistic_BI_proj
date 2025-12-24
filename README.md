@@ -93,6 +93,42 @@ It provides a 6-week timeline, moving from data validation (Week 1) to SQL/ETL (
 
 ## Stratey Document.md
 
+It acts as the final bridge between the business requirements and the actual build in Tableau. While the previous documents focused on what the business needs, this document defines how the dashboard will be technically structured.
+
+Here is an explanation of the core components of this strategy:
+
+1. Data Governance & Security
+Source Identification: It specifies the primary dataset (NYC Citi Bike Trips) and the secondary dataset (Census Bureau US Boundaries) needed to map coordinates to neighborhoods.
+
+Access Control: It establishes a "Read Only" permissions model, ensuring that while many stakeholders can view the data, they cannot accidentally edit or break the underlying logic.
+
+2. Functional Scope
+Field Inventory: It lists the specific fields to be included (Month, Year, Station, Zip Code, Weather, Neighborhood) to ensure the data team builds the correct "view" in the background.
+
+Interactivity & Granularity: It outlines how users will navigate the data, specifically through Date/Month/Year filters and the ability to click on metrics to see deeper details.
+
+3. The Visual Blueprint (Chart Specifications)
+This is the most critical part for a developer, as it defines five specific charts required for the executive summary:
+
+Trip Totals (Line Chart): Tracks volume over time.
+
+Trip Counts by Neighborhood (Table): Provides a granular heat-map style view of location popularity.
+
+Total Trip Minutes by Destination (Bar Chart): Focuses on where bikes are spending the most time, segmented by User Type.
+
+Average Time to Arrive (Table): Analyzes efficiency and travel patterns across zip codes.
+
+Seasonal Trends (Map): A complex geographic view correlating ride volume, duration, and weather patterns.
+
+4. Accountability
+Sign-off Matrix: It includes a formal section for the Proposer (Jamal Harris) to approve the status, moving the project from "Draft" to "Implemented".
+
+How this differs from your other documents:
+Meeting Notes: High-level conversation and "the story."
+
+Project Planning Document (PPD): Logistics, timelines (6 weeks), and SMART goals.
+
+Strategy Document: The technical recipe—exactly which chart types to use and which dimensions/metrics to drag onto each sheet.
 
 ## Target Table SQL Code - Seasonal Trends.md
 
