@@ -291,6 +291,4 @@ Seasonal Trends: There is a very clear temporal pattern across all neighborhoods
 Manhattan Dominance: The data shows that Manhattan (specifically Chelsea, the Lower East Side, and Greenwich Village) sees much higher trip volumes than the listed Brooklyn neighborhoods.
 This dashboard shows a comparison between the top trips through the bike-sharing service based on starting point and destination point as well ass through starting neighborhood.
 
-## Executive Summary.md
 
-The executive summary gives the overview of the project for stakeholders to have a summarised view of all the contents and reuslting insights.
