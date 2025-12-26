@@ -163,8 +163,134 @@ The WHERE clause ensures the dataset is manageable and focused on the specific r
 Weather Accuracy: It only uses weather data from the Central Park station (94728) to ensure consistency across all NYC trips.
 
 Summer Focus: It filters specifically for July, August, and September 2015. This directly fulfills the stakeholder requirement to "focus on trends from the summer".
+
 ## Target Table SQL Code - Entire Year.md
+
+To get a summary of key data points as stated by the stakeholder, we need to bunch up indidividual trip records from the previous SQL Code to create summarised dataset. The logic for this query is as follows:
+
+**1. The Power of Aggregation (GROUP BY and COUNT)**
+
+The most significant change is the addition of COUNT(TRI.bikeid) AS trip_count and the GROUP BY clause at the bottom.
+
+Instead of one row per ride, it creates one row for every unique combination of user type, start/end neighborhood, and day.
+
+It drastically reduces the size of your dataset, making your Tableau dashboard run much faster without losing any accuracy in your totals.
+
+**2. Broadening the Timeline (2014–2015)**
+
+The WHERE clause has changed from a single summer to a full two-year window: BETWEEN 2014 AND 2015.
+
+Stakeholder Need: This fulfills the requirement to analyze "at least one year" to see seasonality (the peaks and valleys) and calculate Year-over-Year (YoY) growth.
+
+The 5-Year Shift: By keeping the DATE_ADD(..., INTERVAL 5 YEAR), you are effectively presenting data as if it happened in 2019 and 2020, making the report feel current for the "Business Plan for next year".
+
+**3. Precision Geospatial Mapping**
+
+The INNER JOIN using ST_WITHIN and ST_GEOGPOINT remains the "brain" of the operation.
+
+It takes the specific longitude/latitude "dots" from the bike trip and identifies which "polygon" (Zip Code shape) those dots fall into.
+
+By joining this to your cyclistic.zip_codes table, you convert technical coordinates into human-readable neighborhoods like "Upper West Side" or "Chelsea".
+
+**4. Categorizing Trip Length**
+
+ROUND(CAST(TRI.tripduration / 60 AS INT64), -1)
+
+This rounds trip lengths to the nearest 10 minutes (e.g., 8 minutes becomes 10, 24 minutes becomes 20).
+
+It creates "buckets" of time, allowing to build a Bar Chart in Tableau that shows which neighborhoods attract long-duration rides versus quick commutes.
 
 ## Dashboard in Tableau.md
 
+The final visualisation is clumped into 3 dashboards helped with a navigation bar to move through the dashboards. Further description of the dashboards:
+
+**1. Summer Trends**
+
+This dashboard provides a detailed analysis of bike-sharing usage in New York City (likely Citi Bike data), focusing on neighborhood-level performance and seasonal trends. It combines geographic mapping with granular data tables to compare different user groups.
+
+The dashboard is organized into three primary sections:
+
+(a) Neighborhood Activity Map (Top Left)
+The large choropleth map visualizes trip intensity across various NYC neighborhoods.
+
+Key Regions: The highest activity (darker blue) is concentrated in Manhattan (Gramercy Park, Murray Hill, Lower East Side) and North Brooklyn (Bushwick, Williamsburg, and Greenpoint).
+
+Neighborhood Labels: Specific areas like the Upper West Side, Chelsea, and Northwest Brooklyn are highlighted to show the extent of the service area.
+
+(b) Detailed Trip Breakdown (Top Right)
+This table provides a numerical deep dive into the performance of each neighborhood, categorized by Usertype (Customer vs. Subscriber).
+
+Top Performer: Bushwick and Williamsburg recorded the highest volume with a Grand Total of 9,206 trips.
+
+User Dynamics: Subscribers (likely locals or commuters) account for the vast majority of trips compared to "Customers" (likely tourists or short-term users). For example, in Greenpoint, there are 4,277 Subscriber trips compared to 1,217 Customer trips.
+
+Metrics: The table tracks both the Sum of Trips and Average Trip Minutes, though some figures in the table appear to be duplicated or represent trip counts in both columns.
+
+(c) Summer Trends by Month (Bottom)
+This section uses three small-scale "spark-maps" to show how bike usage changes throughout the summer season (July, August, and September).
+
+Growth Trend: There is a visible increase in intensity (shifting to darker oranges/reds) as the season progresses.
+
+September Peak: September appears to be the densest month, suggesting that ridership peaks in late summer/early autumn as temperatures become more comfortable for commuting.
+
+2. Weather Patterns
+
+This dashboard analyzes how environmental factors and temporal patterns influence bike-sharing ridership, specifically tracking trip counts against weather and time variables from 2019 to 2021.
+
+(a) Precipitation Impact (Top Left)The first chart demonstrates a strong inverse relationship between rainfall and ridership. 
+
+-The "Zero Rain" Spike: The vast majority of trips occur on days with 0.0 inches of precipitation.
+
+-Sensitivity to Rain: There is a drastic drop-off in trip volume the moment any measurable precipitation is recorded (e.g., 0.1 to 0.5 inches). Users are highly sensitive to even light rain, which significantly deters ridership.
+
+(b) Cumulative Growth: Running Sum (Top Right)This area chart tracks the total growth of the system over a two-year period.
+
+-Growth Milestone: The cumulative "Sum of Trip Count" rises steadily from January 2019, surpassing 17.5 million total trips by early 2021.
+
+-Pandemic Flatline: There is a noticeable "leveling off" of the slope in early 2020 (around March/April), which aligns with COVID-19 lockdowns, followed by a rapid recovery as bike-sharing became a preferred socially-distanced transport method.
+
+(c) Monthly Seasonality (Bottom Left)The stacked bar chart highlights the cyclical nature of bike usage throughout the year.
+
+-Peak Performance: September is the highest ridership month, exceeding 2 million trips.Winter Lows: February represents the annual low point, with trip counts dropping to approximately half of the peak summer volume.
+
+-Seasonal Shift: Ridership begins to climb sharply in April and maintains high levels through October before the winter decline.
+
+(d) Temperature Correlation (Bottom Right)This line chart shows how "Day Mean Temperature" drives user behavior.Positive Correlation: As the mean temperature increases, the number of trips increases.
+
+-The "Sweet Spot": Usage peaks and becomes most volatile between 70(degree)F and 85(degree)F.
+
+-Subscriber vs. Customer: Both user groups (represented by the two colored lines) show the same temperature-driven peaks, though Subscribers consistently maintain higher base volume.
+
+**3. Top Trips**
+
+This dashboard provides a detailed look at trip data (likely from a bike-sharing service like Citi Bike) across various neighborhoods in New York City, specifically Manhattan and Brooklyn. It focuses on three key metrics: Trip Minutes, Geographic Locations, and User Types.
+
+Here is a breakdown of the visualization’s components and the insights they reveal:
+
+(a) Trip Minutes by Starting Point & Destination 
+These two stacked bar charts compare how many minutes were spent on trips based on where they began and where they ended.
+
+Subscriber vs. Customer: The bars are color-coded. Orange represents "Subscribers" (frequent users), while Blue represents "Customers" (casual/one-time users). In almost every neighborhood, Subscribers account for the vast majority of the total trip minutes.
+
+High-Traffic Areas: Zip codes like 10011 (Chelsea and Clinton) and 10003 (Lower East Side) show the highest volume of trip minutes.
+
+Symmetry: The "Starting Point" and "Destination" charts look very similar, suggesting that people generally start and end their trips within the same high-density clusters.
+
+(b) Trip Counts by Starting Neighborhood 
+
+This is a "Heatmap" or "Highlight Table" that tracks the total number of trips across the first three months of the year.
+
+Seasonal Trends: There is a very clear temporal pattern across all neighborhoods:
+
+-January: Moderate activity.
+
+-February: A significant dip in trip counts (likely due to colder weather or fewer days in the month).
+
+-March: A massive surge in activity. For example, in zip code 10003, trips jumped from roughly 25,000 in February to over 45,000 in March.
+
+Manhattan Dominance: The data shows that Manhattan (specifically Chelsea, the Lower East Side, and Greenwich Village) sees much higher trip volumes than the listed Brooklyn neighborhoods.
+This dashboard shows a comparison between the top trips through the bike-sharing service based on starting point and destination point as well ass through starting neighborhood.
+
 ## Executive Summary.md
+
+The executive summary gives the overview of the project for stakeholders to have a summarised view of all the contents and reuslting insights.
