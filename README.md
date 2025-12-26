@@ -247,11 +247,11 @@ This dashboard analyzes how environmental factors and temporal patterns influenc
 
 -Growth Milestone: The cumulative "Sum of Trip Count" rises steadily from January 2019, surpassing 17.5 million total trips by early 2021.
 
--Pandemic Flatline: There is a noticeable "leveling off" of the slope in early 2020 (around March/April), which aligns with COVID-19 lockdowns, followed by a rapid recovery as bike-sharing became a preferred socially-distanced transport method.
-
 (c) Monthly Seasonality (Bottom Left)The stacked bar chart highlights the cyclical nature of bike usage throughout the year.
 
--Peak Performance: September is the highest ridership month, exceeding 2 million trips.Winter Lows: February represents the annual low point, with trip counts dropping to approximately half of the peak summer volume.
+-Peak Performance: September is the highest ridership month, exceeding 2 million trips.
+
+- Winter Lows: February represents the annual low point, with trip counts dropping to approximately half of the peak summer volume.
 
 -Seasonal Shift: Ridership begins to climb sharply in April and maintains high levels through October before the winter decline.
 
