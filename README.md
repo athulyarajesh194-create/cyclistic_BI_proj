@@ -132,6 +132,36 @@ Strategy Document: The technical recipe—exactly which chart types to use and w
 
 ## Target Table SQL Code - Seasonal Trends.md
 
+This SQL Query follows ETL (Extract, Transfor, Load) concept. I am taking the raw data from multiple datasets and combining them to single clean target table for visualisation and analysis through Tableau to meet stakeholder requirements. This is what the code/query is doing in detail:
+
+**1. The Core "Join" Logic (Connecting the Dots)**
+The code combines four different types of data using Inner Joins:
+
+Trip Data: The foundation is the NYC Citi Bike trips.
+
+Geospatial Data: It uses a complex function called ST_WITHIN. It takes the Latitude and Longitude of the bike stations and checks which Zip Code Boundary they fall inside.
+
+Weather Data: It joins with NOAA weather records by matching the date of the trip to the daily weather report from the Central Park station.
+
+Neighborhood Mapping: It joins a custom table (cyclistic.zip_codes) to translate raw Zip Code numbers into readable names like "Borough" and "Neighborhood".
+
+**2. Key Data Transformations**
+
+The SELECT statement performs several calculations to prepare the data for your dashboard:
+
+The "Time Shift": DATE_ADD(..., INTERVAL 5 YEAR) transforms 2015 data into 2020. This allows your "Business Plan for next year" to feel more current and relevant to stakeholders.
+
+Unit Conversion: TRI.tripduration / 60 converts raw seconds into minutes.
+
+Rounding: ROUND(..., -1) rounds the trip minutes to the nearest 10. This helps "clean" the data by grouping trip lengths into buckets (10 min, 20 min, etc.).
+
+**3. Filtering for Strategy**
+
+The WHERE clause ensures the dataset is manageable and focused on the specific requirements:
+
+Weather Accuracy: It only uses weather data from the Central Park station (94728) to ensure consistency across all NYC trips.
+
+Summer Focus: It filters specifically for July, August, and September 2015. This directly fulfills the stakeholder requirement to "focus on trends from the summer".
 ## Target Table SQL Code - Entire Year.md
 
 ## Dashboard in Tableau.md
