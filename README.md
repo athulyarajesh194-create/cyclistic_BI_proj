@@ -135,6 +135,7 @@ Strategy Document: The technical recipe—exactly which chart types to use and w
 This SQL Query follows ETL (Extract, Transfor, Load) concept. I am taking the raw data from multiple datasets and combining them to single clean target table for visualisation and analysis through Tableau to meet stakeholder requirements. This is what the code/query is doing in detail:
 
 **1. The Core "Join" Logic (Connecting the Dots)**
+
 The code combines four different types of data using Inner Joins:
 
 Trip Data: The foundation is the NYC Citi Bike trips.
